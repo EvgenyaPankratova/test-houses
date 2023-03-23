@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуляем стили, подготавливаем к работе****/
 /* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -69,4 +70,56 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Fonts */
+/* Header */
+.header {
+  padding: 0 20% 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Nav */
+.nav {
+  width: 100%;
+  background: #F06800;
+  height: 60px;
+  color: white;
+}
+.nav .nav__list {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+/* Sidebar */
+/* Main */
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  padding: 0 20% 0 20%;
+  text-align: left;
 }

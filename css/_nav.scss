@@ -1,0 +1,14 @@
+.nav{
+    width: 100%;
+    background: #F06800;
+    height: 60px;
+    color: white;
+
+    .nav__list{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
