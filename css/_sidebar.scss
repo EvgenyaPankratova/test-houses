@@ -1,4 +1,31 @@
 .aside{
     display: flex;
     flex-direction: column;
+    line-height: 32px;
+    a{
+        text-decoration: none;
+        color:#212121;
+    }
+    .list-title{
+        background: #378C06;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
+    }
+    .list-title a{
+        color: white;
+    }
+    .list-title-icon{
+        width: 1rem;
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+    .list-item:hover{
+        border-left: 5px solid #FF9800;
+        cursor: pointer;
+    }
 }
