@@ -2,13 +2,26 @@
     width: 100%;
     background: #F06800;
     height: 60px;
-    color: white;
-
+    display: flex;
+    align-items: center;
     .nav__list{
         width: 50%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: 0 auto;
+       & li {
+        padding-right: 10px;
+        margin-right: 10px;
+        }
+        & li:not(:last-of-type) {
+        border-right: 1px solid white; //добавляем вертикальные линии между ссылками
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        
+   
     }
 }

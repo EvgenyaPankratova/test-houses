@@ -84,13 +84,51 @@ body {
 /* Fonts */
 /* Header */
 .header {
-  padding: 0 20% 0 20%;
+  padding: 5px 15% 0 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+.header__logo {
+  font-size: 12px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 14px;
+}
+.header__logo-img {
+  width: 6rem;
+  display: inline-block;
+}
+.header .icon {
+  width: 0.9rem;
+  line-height: 0.5rem;
+  display: inline-block;
+  margin-right: 5px;
+}
+.header__tel-block {
+  font-weight: 500;
+}
+.header__tel-btn {
+  background: #378C06;
+  border-radius: 30px;
+  width: 170px;
+  color: white;
+  border: none;
+}
+.header__tel-btn:hover {
+  background: darkgreen;
 }
 
 /* Nav */
@@ -98,7 +136,12 @@ body {
   width: 100%;
   background: #F06800;
   height: 60px;
-  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nav .nav__list {
   width: 50%;
@@ -112,14 +155,42 @@ body {
           align-items: center;
   margin: 0 auto;
 }
+.nav .nav__list li {
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.nav .nav__list li:not(:last-of-type) {
+  border-right: 1px solid white;
+}
+.nav .nav__list a {
+  color: white;
+  text-decoration: none;
+}
 
 /* Sidebar */
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* Main */
 .main-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
-  padding: 0 20% 0 20%;
+  padding: 10px 15% 0 15%;
   text-align: left;
+}
+.main-container .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
 }

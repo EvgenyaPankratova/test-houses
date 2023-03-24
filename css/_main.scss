@@ -3,9 +3,12 @@
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
-    padding: 0 20% 0 20%;
+    padding: 10px 15% 0 15%;
     text-align: left;
-    .content{
-        
+    .category{
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
     }
+   
 }
