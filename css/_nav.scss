@@ -18,9 +18,13 @@
         & li:not(:last-of-type) {
         border-right: 1px solid white; //добавляем вертикальные линии между ссылками
         }
+        
         a{
             color: white;
             text-decoration: none;
+        }
+        a:hover{
+            border-bottom: 1px solid white;
         }
         
    

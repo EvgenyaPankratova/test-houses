@@ -107,16 +107,19 @@ body {
       -ms-flex-align: center;
           align-items: center;
   line-height: 14px;
+  margin-right: 30px;
 }
 .header__logo-img {
   width: 6rem;
   display: inline-block;
+  margin-right: 10px;
 }
 .header .icon {
   width: 0.9rem;
   line-height: 0.5rem;
   display: inline-block;
   margin-right: 5px;
+  vertical-align: middle;
 }
 .header__tel-block {
   font-weight: 500;
@@ -128,9 +131,16 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 10px;
 }
 .header__tel-btn:hover {
   background: darkgreen;
+}
+.header__schedule-saturday {
+  padding-left: 20px;
+}
+.header__schedule span {
+  font-weight: 500;
 }
 
 /* Nav */
@@ -169,6 +179,9 @@ body {
   color: white;
   text-decoration: none;
 }
+.nav .nav__list a:hover {
+  border-bottom: 1px solid white;
+}
 
 /* Sidebar */
 .aside {
@@ -202,6 +215,9 @@ body {
   position: absolute;
   right: 10px;
   top: 15px;
+}
+.aside .list-item {
+  padding-left: 10px;
 }
 .aside .list-item:hover {
   border-left: 5px solid #FF9800;
@@ -276,6 +292,18 @@ body {
   padding: 5px;
 }
 
+.hidden-content__card-without-image {
+  font-size: 12px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.hidden-content__card-without-image span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #969696;
+}
+
 .card__subtitle {
   font-size: 18px;
   color: #000000;
@@ -312,9 +340,14 @@ body {
   margin-top: -15px;
 }
 
-.card__details img {
+.card__details .img {
   display: inline-block;
+  font-size: 18px;
   margin-right: -20px;
+}
+
+.card__details .img-hidden {
+  color: #F06800;
 }
 
 .card__details-button {
@@ -338,9 +371,49 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .card__details-button:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.card__details-button:hover {
+  background: darkorange;
+}
+
+.hidden-card__details-button {
+  display: inline-block;
+  background: white;
+  border-radius: 0px 0px 2px 2px;
+  color: #F06800;
+  width: 100%;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: bottom;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.hidden-card__details-button button {
+  border-bottom: 1px solid #F06800;
+}
+
+.hidden-card__details-button:after {
   content: "";
   display: inline-block;
   height: 100%;

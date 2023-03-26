@@ -12,16 +12,19 @@ $button_color: #378C06;
         display: flex;
         align-items: center;
         line-height: 14px;
+        margin-right: 30px;
     }
     &__logo-img{
         width: 6rem;
         display: inline-block;
+        margin-right: 10px;
     }
     .icon{
         width: 0.9rem;
         line-height: 0.5rem;
         display: inline-block;
         margin-right: 5px;
+        vertical-align: middle;
     }
     &__tel-block{
         font-weight: 500;
@@ -33,6 +36,14 @@ $button_color: #378C06;
         color: white;
         border: none;
         cursor: pointer;
+        margin-top: 10px;
         &:hover { background: darkgreen; }
         }
+    &__schedule-saturday{
+        padding-left: 20px;
+    }
+    &__schedule span{
+        font-weight: 500;
+
+    }
     }

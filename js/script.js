@@ -39,3 +39,21 @@ function showListThree(){
 };
 
 titleThree.addEventListener("click", showListThree);
+
+/////////Узнать подробнее/////////////
+
+let cards = document.querySelector('.cards');
+let card = document.querySelector('.card');
+
+function handleClick(e) {
+    let button = e.target.closest('button');
+    e.target.closest('button').classList.toggle('hidden-card__details-button');
+
+    let contentShow = button.parentElement.parentElement.children[2];
+    let contentHidden = button.parentElement.parentElement.children[1];
+
+    contentShow.hidden = !contentShow.hidden;
+    contentHidden.hidden = !contentHidden.hidden;
+        
+  }
+  cards.addEventListener('click', handleClick);
