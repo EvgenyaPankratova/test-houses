@@ -150,7 +150,7 @@ body {
   font-weight: 500;
 }
 .header__tel-btn {
-  background: #378C06;
+  background: #378c06;
   border-radius: 30px;
   width: 170px;
   color: white;
@@ -210,7 +210,7 @@ body {
     font-weight: 500;
   }
   .header__tel-btn {
-    background: #378C06;
+    background: #378c06;
     border-radius: 30px;
     width: 170px;
     margin-top: 8px;
@@ -226,8 +226,30 @@ body {
 @media (min-width: 341px) and (max-width: 414px) {
   .header {
     width: 100vh;
-    padding: 5px;
+    padding: 15px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 14px;
+  }
+  .header .header__logo {
+    grid-area: 1/1/4/2;
+  }
+  .header .header__contacts {
+    grid-area: 1/2/2/3;
+  }
+  .header .header__schedule {
+    grid-area: 2/2/3/3;
+  }
+  .header .header__tel {
+    grid-area: 3/2/4/3;
+  }
+  .header__logo {
+    font-size: 12px;
+    font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -235,22 +257,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    font-size: 11px;
-  }
-  .header__logo {
-    font-size: 10px;
-    font-weight: 500;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     line-height: 14px;
+    margin-left: 60px;
   }
   .header__logo-img {
-    width: 6rem;
+    width: 8rem;
     display: inline-block;
   }
   .header .icon {
@@ -264,9 +278,9 @@ body {
     font-weight: 500;
   }
   .header__tel-btn {
-    background: #378C06;
+    background: #378c06;
     border-radius: 30px;
-    width: 170px;
+    width: 150px;
     margin-top: 8px;
   }
   .header__tel-btn__schedule-saturday {
@@ -280,8 +294,30 @@ body {
 @media (min-width: 415px) and (max-width: 575px) {
   .header {
     width: 100vh;
-    padding: 5px;
+    padding: 15px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 14px;
+  }
+  .header .header__logo {
+    grid-area: 1/1/4/2;
+  }
+  .header .header__contacts {
+    grid-area: 1/2/2/3;
+  }
+  .header .header__schedule {
+    grid-area: 2/2/3/3;
+  }
+  .header .header__tel {
+    grid-area: 3/2/4/3;
+  }
+  .header__logo {
+    font-size: 12px;
+    font-weight: 500;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,22 +325,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: center;
-    font-size: 12px;
-  }
-  .header__logo {
-    font-size: 11px;
-    font-weight: 500;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     line-height: 14px;
+    margin-left: 60px;
   }
   .header__logo-img {
-    width: 6rem;
+    width: 8rem;
     display: inline-block;
   }
   .header .icon {
@@ -318,9 +346,9 @@ body {
     font-weight: 500;
   }
   .header__tel-btn {
-    background: #378C06;
+    background: #378c06;
     border-radius: 30px;
-    width: 170px;
+    width: 150px;
     margin-top: 8px;
   }
   .header__tel-btn__schedule-saturday {
@@ -372,7 +400,7 @@ body {
     font-weight: 500;
   }
   .header__tel-btn {
-    background: #378C06;
+    background: #378c06;
     border-radius: 30px;
     width: 170px;
     margin-top: 8px;
@@ -450,7 +478,7 @@ body {
 /* Nav */
 .nav {
   width: 100%;
-  background: #F06800;
+  background: #f06800;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,7 +533,7 @@ body {
 @media (min-width: 341px) and (max-width: 414px) {
   .nav {
     height: 50px;
-    font-size: 12px;
+    font-size: 13px;
     width: 100vh;
   }
   .nav .nav__list {
@@ -547,7 +575,7 @@ body {
 @media (min-width: 768px) and (max-width: 992px) {
   .nav {
     width: 100%;
-    background: #F06800;
+    background: #f06800;
     height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -611,7 +639,7 @@ body {
   color: #212121;
 }
 .aside .list-title {
-  background: #378C06;
+  background: #378c06;
   padding: 5px 10px;
   cursor: pointer;
   font-weight: 500;
@@ -632,7 +660,7 @@ body {
   padding-left: 10px;
 }
 .aside .list-item:hover {
-  border-left: 5px solid #FF9800;
+  border-left: 5px solid #ff9800;
   cursor: pointer;
 }
 .aside .list-title-icon-rotate {
@@ -683,15 +711,17 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    line-height: 20px;
+    line-height: 25px;
     margin-bottom: 40px;
     padding: 5px 20px 0 8px;
-    width: 100vh;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 30px;
   }
   .aside .list-title {
     padding: 5px 10px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
   }
   .aside .list-title-icon {
     width: 1rem;
@@ -702,7 +732,7 @@ body {
   }
   .aside .list-item {
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 /*******************************/
@@ -716,9 +746,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     line-height: 20px;
-    margin-bottom: 40px;
-    padding: 5px 10px 0 8px;
+    padding: 5px 70px 30px 70px;
     width: 100vh;
+    margin: 0 auto;
   }
   .aside .list-title {
     padding: 5px 10px;
@@ -811,7 +841,7 @@ body {
     line-height: 36px;
   }
   .aside .list-title {
-    background: #378C06;
+    background: #378c06;
     padding: 5px 15px;
     cursor: pointer;
     font-weight: 500;
@@ -842,7 +872,7 @@ body {
     line-height: 40px;
   }
   .aside .list-title {
-    background: #378C06;
+    background: #378c06;
     padding: 5px 15px;
     cursor: pointer;
     font-weight: 500;
@@ -881,7 +911,7 @@ body {
 }
 .main-container .category__link {
   margin-left: 5px;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #aaaaaa;
 }
 .main-container .content {
   display: grid;
@@ -897,7 +927,7 @@ body {
   color: #333333;
 }
 .main-container .content__about {
-  color: #7D7D7D;
+  color: #7d7d7d;
   font-weight: 400;
   font-size: 14px;
 }
@@ -909,7 +939,7 @@ body {
   grid-row-gap: 10px;
 }
 .main-container .content__card {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -942,7 +972,7 @@ body {
   }
   .main-container .category__link {
     margin-left: 5px;
-    border-bottom: 1px solid #AAAAAA;
+    border-bottom: 1px solid #aaaaaa;
   }
   .main-container .content {
     display: -webkit-box;
@@ -1011,6 +1041,7 @@ body {
   }
   .main-container .category__link {
     margin-left: 5px;
+    border-bottom: 1px solid #aaaaaa;
   }
   .main-container .content {
     display: -webkit-box;
@@ -1051,7 +1082,6 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 100%;
     margin: 0 auto;
   }
 }
@@ -1091,12 +1121,12 @@ body {
   }
   .main-container .content__title {
     font-size: 11px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .main-container .content__about {
     font-weight: 400;
     font-size: 11px;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
   }
   .main-container .content__cards {
     padding-left: 5%;
@@ -1113,7 +1143,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
   }
   .main-container .content__card {
     height: -webkit-fit-content;
@@ -1146,7 +1177,7 @@ body {
   }
   .main-container .category__link {
     margin-left: 5px;
-    border-bottom: 1px solid #AAAAAA;
+    border-bottom: 1px solid #aaaaaa;
   }
   .main-container .content {
     display: grid;
@@ -1163,7 +1194,7 @@ body {
     margin-bottom: 10px;
   }
   .main-container .content__about {
-    color: #7D7D7D;
+    color: #7d7d7d;
     font-weight: 400;
     font-size: 12px;
     margin-bottom: 10px;
@@ -1294,8 +1325,8 @@ body {
 }
 
 .card__square {
-  background: #25A510;
-  color: #FFFFFF;
+  background: #25a510;
+  color: #ffffff;
   width: 4rem;
   height: 38px;
   display: -webkit-box;
@@ -1325,12 +1356,12 @@ body {
 }
 
 .card__details .img-hidden {
-  color: #F06800;
+  color: #f06800;
 }
 
 .card__details-button {
   display: inline-block;
-  background: #F06800;
+  background: #f06800;
   border-radius: 0px 0px 2px 2px;
   color: white;
   width: 100%;
@@ -1367,7 +1398,7 @@ body {
   display: inline-block;
   background: white;
   border-radius: 0px 0px 2px 2px;
-  color: #F06800;
+  color: #f06800;
   width: 100%;
   border: none;
   font-weight: 500;
@@ -1388,7 +1419,7 @@ body {
 }
 
 .hidden-card__details-button button {
-  border-bottom: 1px solid #F06800;
+  border-bottom: 1px solid #f06800;
 }
 
 .hidden-card__details-button:after {
@@ -1461,8 +1492,8 @@ body {
     margin-top: 5px;
   }
   .card__square {
-    background: #25A510;
-    color: #FFFFFF;
+    background: #25a510;
+    color: #ffffff;
     width: 4rem;
     height: 38px;
     display: -webkit-box;
@@ -1513,9 +1544,9 @@ body {
     margin-top: 5px;
   }
   .card__square {
-    background: #25A510;
-    color: #FFFFFF;
-    width: 4rem;
+    background: #25a510;
+    color: #ffffff;
+    width: 5rem;
     height: 38px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1534,11 +1565,47 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin-top: -15px;
+    font-size: 14px;
   }
   .card__details .img {
     display: inline-block;
     font-size: 18px;
     margin-right: -220px;
+  }
+  .card__price-square-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .card__price-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 15px;
+  }
+  .newprice-bold {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .card__oldprice {
+    color: #969696;
+    font-weight: 400;
+    font-size: 14px;
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    line-height: 14px;
   }
 }
 /*******************************/
@@ -1565,8 +1632,8 @@ body {
     margin-top: 5px;
   }
   .card__square {
-    background: #25A510;
-    color: #FFFFFF;
+    background: #25a510;
+    color: #ffffff;
     width: 4rem;
     height: 38px;
     display: -webkit-box;
@@ -1618,8 +1685,8 @@ body {
     margin-bottom: 8px;
   }
   .card__square {
-    background: #25A510;
-    color: #FFFFFF;
+    background: #25a510;
+    color: #ffffff;
     width: 4rem;
     height: 38px;
     display: -webkit-box;
@@ -1646,7 +1713,7 @@ body {
     margin-right: -30px;
   }
   .card__details .img-hidden {
-    color: #F06800;
+    color: #f06800;
   }
   .card__details-button {
     border-radius: 0px 0px 2px 2px;
@@ -1681,7 +1748,7 @@ body {
     display: inline-block;
     background: white;
     border-radius: 0px 0px 2px 2px;
-    color: #F06800;
+    color: #f06800;
     width: 100%;
     border: none;
     font-weight: 500;
@@ -1701,7 +1768,7 @@ body {
     cursor: pointer;
   }
   .hidden-card__details-button button {
-    border-bottom: 1px solid #F06800;
+    border-bottom: 1px solid #f06800;
   }
   .hidden-card__details-button:after {
     content: "";
@@ -1780,7 +1847,7 @@ body {
     display: inline-block;
     background: white;
     border-radius: 0px 0px 2px 2px;
-    color: #F06800;
+    color: #f06800;
     width: 100%;
     border: none;
     font-weight: 500;

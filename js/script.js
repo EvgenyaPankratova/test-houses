@@ -1,59 +1,59 @@
 ////////Строительство//////////////
-let title = document.querySelector('.aside__list-title');
-let list = document.querySelectorAll('.aside__list-item');
-let icon = document.querySelector('.list-title-icon');
+let title = document.querySelector(".aside__list-title");
+let list = document.querySelectorAll(".aside__list-item");
+let icon = document.querySelector(".list-title-icon");
 
-function showList(){
-    for(let i=0; i < list.length; i++){ //скрываем/показываем элементы списка
-        list[i].hidden = !list[i].hidden;
-    }
-    icon.classList.toggle('list-title-icon-rotate'); //поворачиваем стрелку при закрытии списка
-};
+function showList() {
+  for (let i = 0; i < list.length; i++) {
+    //скрываем/показываем элементы списка
+    list[i].hidden = !list[i].hidden;
+  }
+  icon.classList.toggle("list-title-icon-rotate"); //поворачиваем стрелку при закрытии списка
+}
 
 title.addEventListener("click", showList);
 
 ////////Проекты//////////////
-let titleTwo = document.querySelector('.aside__list-titleTwo');
-let listTwo = document.querySelectorAll('.aside__list-itemTwo');
-let iconTwo = document.querySelector('.list-title-iconTwo');
+let titleTwo = document.querySelector(".aside__list-titleTwo");
+let listTwo = document.querySelectorAll(".aside__list-itemTwo");
+let iconTwo = document.querySelector(".list-title-iconTwo");
 
-function showListTwo(){
-    for(let i=0; i < listTwo.length; i++){
-        listTwo[i].hidden = !listTwo[i].hidden;
-    }
-    iconTwo.classList.toggle('list-title-icon-rotate');
-};
+function showListTwo() {
+  for (let i = 0; i < listTwo.length; i++) {
+    listTwo[i].hidden = !listTwo[i].hidden;
+  }
+  iconTwo.classList.toggle("list-title-icon-rotate");
+}
 
 titleTwo.addEventListener("click", showListTwo);
 
 ////////Дома от 200м2//////////
-let titleThree = document.querySelector('.aside__list-titleThree');
-let listThree = document.querySelectorAll('.aside__list-itemThree');
-let iconThree = document.querySelector('.list-title-iconThree');
+let titleThree = document.querySelector(".aside__list-titleThree");
+let listThree = document.querySelectorAll(".aside__list-itemThree");
+let iconThree = document.querySelector(".list-title-iconThree");
 
-function showListThree(){
-    for(let i=0; i < listThree.length; i++){
-        listThree[i].hidden = !listThree[i].hidden;
-    }
-    iconThree.classList.toggle('list-title-icon-rotate');
-};
+function showListThree() {
+  for (let i = 0; i < listThree.length; i++) {
+    listThree[i].hidden = !listThree[i].hidden;
+  }
+  iconThree.classList.toggle("list-title-icon-rotate");
+}
 
 titleThree.addEventListener("click", showListThree);
 
 /////////Узнать подробнее/////////////
 
-let cards = document.querySelector('.cards');
-let card = document.querySelector('.card');
+let cards = document.querySelector(".cards");
+let card = document.querySelector(".card");
 
 function handleClick(e) {
-    let button = e.target.closest('button');
-    e.target.closest('button').classList.toggle('hidden-card__details-button');
+  let button = e.target.closest("button");
+  e.target.closest("button").classList.toggle("hidden-card__details-button");
 
-    let contentShow = button.parentElement.parentElement.children[2];
-    let contentHidden = button.parentElement.parentElement.children[1];
+  let contentShow = button.parentElement.parentElement.children[2];
+  let contentHidden = button.parentElement.parentElement.children[1];
 
-    contentShow.hidden = !contentShow.hidden;
-    contentHidden.hidden = !contentHidden.hidden;
-        
-  }
-  cards.addEventListener('click', handleClick);
+  contentShow.hidden = !contentShow.hidden;
+  contentHidden.hidden = !contentHidden.hidden;
+}
+cards.addEventListener("click", handleClick);
