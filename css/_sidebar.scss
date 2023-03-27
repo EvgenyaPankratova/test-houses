@@ -35,3 +35,192 @@
         transform: rotate(180deg);
     }
 }
+/*************МЕДИА-ЗАПРОСЫ******************/
+@media (max-width: 340px) {
+    .aside{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        margin-bottom: 40px;
+        padding: 5px 20px 0 8px;
+        width: 100vh;
+        .list-title{
+            padding: 5px 10px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .list-title-icon{
+            width: 1rem;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+        .list-item{
+            padding-left: 10px;
+            font-size: 12px;
+        }
+    }
+}
+/*******************************/
+@media (min-width: 341px) and (max-width: 414px) {
+    .aside{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        margin-bottom: 40px;
+        padding: 5px 20px 0 8px;
+        width: 100vh;
+        .list-title{
+            padding: 5px 10px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .list-title-icon{
+            width: 1rem;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+        .list-item{
+            padding-left: 10px;
+            font-size: 12px;
+        }
+    }
+}
+/*******************************/
+@media (min-width: 415px) and (max-width: 575px) {
+    .aside{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        margin-bottom: 40px;
+        padding: 5px 10px 0 8px;
+        width: 100vh;
+        .list-title{
+            padding: 5px 10px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .list-title-icon{
+            width: 1rem;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+        .list-item{
+            padding-left: 10px;
+            font-size: 12px;
+        }
+    }
+}
+/*******************************/
+@media (min-width: 576px) and (max-width: 767px) {
+    .aside{
+        display: flex;
+        flex-direction: column;
+        line-height: 24px;
+        width: 100%;
+      
+        .list-title{
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        .list-title-icon{
+            width: 0.8rem;
+            display: inline-block;
+            position: absolute;
+            right: 8px;
+            top: 14px;
+        }
+        .list-item{
+            padding-left: 10px;
+            font-size: 12px;
+        }
+      
+    }
+}
+/*******************************/
+@media (min-width: 768px) and (max-width: 992px) {
+    .aside{
+        display: flex;
+        flex-direction: column;
+        line-height: 28px;
+        width: 90%;
+        .list-title{
+            padding: 5px 10px;
+            font-size: 13px;
+        }
+        .list-title-icon{
+            width: 0.8rem;
+            display: inline-block;
+            position: absolute;
+            right: 8px;
+            top: 14px;
+        }
+        .list-item{
+            padding-left: 10px;
+            font-size: 12px;
+        }
+    }
+}
+/*******************************/
+@media (min-width: 993px) and (max-width: 1100px) {}
+/*******************************/
+@media (min-width: 1101px) and (max-width: 1250px) {}
+/*******************************/
+@media (min-width: 1251px) and (max-width: 1400px) {}
+/*******************************/
+@media (min-width: 1401px) and (max-width: 1899px) {
+    .aside{
+        display: flex;
+        flex-direction: column;
+        line-height: 36px;
+        .list-title{
+            background: #378C06;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 18px;
+            position: relative;
+        }
+        .list-title-icon{
+            width: 1rem;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 20px;
+        }
+        .list-item{
+            padding-left: 15px;
+        }
+    }
+}
+/*******************************/
+@media (min-width: 1900px) {
+    .aside{
+        display: flex;
+        flex-direction: column;
+        line-height: 40px;
+        .list-title{
+            background: #378C06;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 18px;
+            position: relative;
+        }
+        .list-title-icon{
+            width: 1rem;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 20px;
+        }
+        .list-item{
+            padding-left: 15px;
+        }
+    }
+}
