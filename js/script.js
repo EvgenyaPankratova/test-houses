@@ -1,45 +1,25 @@
-////////Строительство//////////////
-let title = document.querySelector(".aside__list-title");
-let list = document.querySelectorAll(".aside__list-item");
-let icon = document.querySelector(".list-title-icon");
+////////Скрытие/показ элементов//////////////
 
-function showList() {
-  for (let i = 0; i < list.length; i++) {
-    //скрываем/показываем элементы списка
-    list[i].hidden = !list[i].hidden;
-  }
-  icon.classList.toggle("list-title-icon-rotate"); //поворачиваем стрелку при закрытии списка
+let titleList = document.querySelectorAll(".list-title-toggle");
+
+function showList(e) {
+  //скрываем/показываем элементы списка
+  let childrenContainer =
+    e.target.parentNode.querySelectorAll(".aside__list-item");
+
+  childrenContainer.forEach((elem) => {
+    elem.hidden = !elem.hidden;
+  });
+
+  //поворачиваем стрелку при закрытии списка
+  e.target
+    .querySelector(".list-title-icon")
+    .classList.toggle("list-title-icon-rotate");
 }
 
-title.addEventListener("click", showList);
-
-////////Проекты//////////////
-let titleTwo = document.querySelector(".aside__list-titleTwo");
-let listTwo = document.querySelectorAll(".aside__list-itemTwo");
-let iconTwo = document.querySelector(".list-title-iconTwo");
-
-function showListTwo() {
-  for (let i = 0; i < listTwo.length; i++) {
-    listTwo[i].hidden = !listTwo[i].hidden;
-  }
-  iconTwo.classList.toggle("list-title-icon-rotate");
-}
-
-titleTwo.addEventListener("click", showListTwo);
-
-////////Дома от 200м2//////////
-let titleThree = document.querySelector(".aside__list-titleThree");
-let listThree = document.querySelectorAll(".aside__list-itemThree");
-let iconThree = document.querySelector(".list-title-iconThree");
-
-function showListThree() {
-  for (let i = 0; i < listThree.length; i++) {
-    listThree[i].hidden = !listThree[i].hidden;
-  }
-  iconThree.classList.toggle("list-title-icon-rotate");
-}
-
-titleThree.addEventListener("click", showListThree);
+titleList.forEach((elem) => {
+  elem.addEventListener("click", (e) => showList(e));
+});
 
 /////////Узнать подробнее/////////////
 
@@ -48,7 +28,7 @@ let card = document.querySelector(".card");
 
 function handleClick(e) {
   let button = e.target.closest("button");
-  e.target.closest("button").classList.toggle("hidden-card__details-button");
+  button.classList.toggle("hidden-card__details-button");
 
   let contentShow = button.parentElement.parentElement.children[2];
   let contentHidden = button.parentElement.parentElement.children[1];
@@ -57,3 +37,4 @@ function handleClick(e) {
   contentHidden.hidden = !contentHidden.hidden;
 }
 cards.addEventListener("click", handleClick);
+
